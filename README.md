@@ -2,7 +2,7 @@
 
 ## Lesson to get fammiliar with git
 
-git pull orign
+git pull origin
 
 git checkout -b task1-dmitirySG
 
