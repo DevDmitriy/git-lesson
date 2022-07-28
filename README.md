@@ -6,3 +6,11 @@ git pull orign
 
 git checkout -b task1-dmitirySG
 
+- add a file
+
+git add .
+
+git commit - m "task 1 - interests"
+
+git push origin HEAD
+
