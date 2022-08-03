@@ -2,15 +2,28 @@
 
 ## Lesson to get fammiliar with git
 
-git pull origin
+1. Create account on github
 
-git checkout -b task1-dmitirySG
+2. Send me account name via messenger
 
-- add a file
+3. visit https://github.com/DevDmitriy/git-lesson
 
-git add .
+4. Create new folder in any direcroty on PC
 
-git commit - m "task 1 - interests"
+5. Open that folder via terminal
 
-git push origin HEAD
+6. Run command "git clone https://github.com/DevDmitriy/git-lesson.git ."
 
+7. Create your branch (git branch checkout yourname-1)
+
+8. Create file yourname.json in participants forlder, add there your interests (lile dmitriySG.json example), save file
+
+9. Look on git status (run command "git status")
+
+10. Add files (git add .)
+
+11. Commit changes (git commit -m "commit message")
+
+12. Push changes (git push origin HEAD)
+
+13. Go to https://github.com/DevDmitriy/git-lesson.git and create a pull request with your changes
