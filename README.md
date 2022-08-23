@@ -27,3 +27,13 @@
 12. Push changes (git push origin HEAD)
 
 13. Go to https://github.com/DevDmitriy/git-lesson.git and create a pull request with your changes
+
+## Tasks on JS classes
+
+1. Checkout to main, pull
+
+2. Create new branch with task name
+
+3. Create new file "task1-YourName", add solution there
+
+4. Commit, push changes, create a PR
