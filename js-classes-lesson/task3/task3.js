@@ -1,10 +1,11 @@
 // Rewrite it in the “class” syntax.
+class Clock {
+  constructor({ template }){
+    this.template = template;
+    this.timer = null;
+  }
 
-function Clock({ template }) {
-  
-  let timer;
-
-  function render() {
+  render() {
     let date = new Date();
 
     let hours = date.getHours();
@@ -16,7 +17,7 @@ function Clock({ template }) {
     let secs = date.getSeconds();
     if (secs < 10) secs = '0' + secs;
 
-    let output = template
+    let output = this.template
       .replace('h', hours)
       .replace('m', mins)
       .replace('s', secs);
@@ -24,13 +25,13 @@ function Clock({ template }) {
     console.log(output);
   }
 
-  this.stop = function() {
-    clearInterval(timer);
+  stop = function() {
+    clearInterval(this.timer);
   };
 
-  this.start = function() {
-    render();
-    timer = setInterval(render, 1000);
+  start = function() {
+    this.render();
+    this.timer = setInterval(this.render, 1000);
   };
 
 }
