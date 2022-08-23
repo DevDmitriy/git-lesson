@@ -1,3 +1,5 @@
+// Rabbit objects can’t be created. What’s wrong? Fix it.
+
 class Animal {
 
   constructor(name) {
@@ -7,8 +9,7 @@ class Animal {
 }
 
 class Rabbit extends Animal {
-  constructor(name, created) {
-    super(name, created)
+  constructor(name) {
     this.name = name;
     this.created = Date.now();
   }
