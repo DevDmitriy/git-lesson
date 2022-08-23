@@ -1,7 +1,7 @@
 class Car {
 
 constructor(brand, speed) {
-    this.brand = brand,
+    this.brand = brand
     this.speed = speed
     }	
 
