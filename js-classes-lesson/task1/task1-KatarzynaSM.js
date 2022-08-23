@@ -3,7 +3,7 @@
 // 3 methods (accelerate, brake, describe)
 
 
-class cars {
+class Cars {
 	constructor (brand, speed){
 		this.brand = brand;
 		this.speed = speed;
@@ -20,7 +20,7 @@ class cars {
 	}
 }
 
-let car = new cars("Ford", 0);
+let car = new Cars("Ford", 0);
 
 console.log(car.describe());
 car.accelerate(50);
@@ -30,7 +30,7 @@ console.log(car.describe());
 car.brake(25);
 console.log(car.describe());
 
-let car2 = new cars("Ferrari", 0);
+let car2 = new Cars("Ferrari", 0);
 
 car2.accelerate(200);
 console.log(car2.describe());
