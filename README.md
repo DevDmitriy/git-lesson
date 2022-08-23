@@ -14,7 +14,7 @@
 
 6. Run command "git clone https://github.com/DevDmitriy/git-lesson.git ."
 
-7. Create your branch (git branch checkout yourname-1)
+7. Create your branch (git branch checkout yourname-git-lesson-1)
 
 8. Create file yourname.json in participants forlder, add there your interests (lile dmitriySG.json example), save file
 
