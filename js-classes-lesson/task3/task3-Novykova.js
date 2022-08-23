@@ -1,0 +1,47 @@
+// Rewrite it in the “class” syntax.
+
+class Clock { 
+  
+  constructor({template}) {
+    this.template = template;
+  } 
+ 
+  //methods
+  render(date, hours, mins, secs, output) {
+    this.date = date;
+    date = new Date();
+
+    this.hours = hours;
+    hours = date.getHours();
+    if (hours < 10) hours = '0' + hours;
+
+    this.mins = mins;
+    mins = date.getMinutes();
+    if (mins < 10) mins = '0' + mins;
+
+    this.secs = secs;
+    secs = date.getSeconds();
+    if (secs < 10) secs = '0' + secs;
+
+    this.output = this.template
+    .replace('h', hours)
+    .replace('m', mins)
+    .replace('s', secs);
+
+    console.log(output);
+
+  }
+
+  stop() {
+    clearInterval(this.timer);
+  };
+
+  start() {
+    this.render();
+    this.timer = setInterval(this.render, 1000);
+  };
+
+}
+
+let clock = new Clock("h:m:s");
+clock.start();
