@@ -19,11 +19,7 @@ class Car {
 	status(){
 		return this.brand + " running at " + this.speed + " km/h";
 	}
-
-
 }
-
-// Try methods
 
 let car1 = new Car('Ford',0);
 
@@ -37,7 +33,6 @@ console.log(car1.status());
 
 let car2 = new Car('Ferrari',0);
 
-	
 car2.accelerate(200);
 console.log(car2.status());
 car2.brake(100);
