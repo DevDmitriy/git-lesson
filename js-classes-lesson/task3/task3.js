@@ -33,7 +33,6 @@ class Clock {
     this.render();
     this.timer = setInterval(this.render, 1000);
   };
-
 }
 
 let clock = new Clock({template: 'h:m:s'});
