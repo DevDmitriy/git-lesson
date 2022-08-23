@@ -7,8 +7,8 @@ class Animal {
 }
 
 class Rabbit extends Animal {
-  constructor(name, created) {
-    super(name, created)
+  constructor(name) {
+    super(name)
     this.name = name;
     this.created = Date.now();
   }
