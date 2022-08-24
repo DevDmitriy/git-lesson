@@ -7,23 +7,19 @@ class Clock {
   } 
  
   //methods
-  render(date, hours, mins, secs, output) {
-    this.date = date;
-    date = new Date();
+  render() {
+    let date = new Date();
 
-    this.hours = hours;
-    hours = date.getHours();
+    let hours = date.getHours();
     if (hours < 10) hours = '0' + hours;
 
-    this.mins = mins;
-    mins = date.getMinutes();
+    let mins = date.getMinutes();
     if (mins < 10) mins = '0' + mins;
 
-    this.secs = secs;
-    secs = date.getSeconds();
+    let secs = date.getSeconds();
     if (secs < 10) secs = '0' + secs;
 
-    this.output = this.template
+    let output = this.template
     .replace('h', hours)
     .replace('m', mins)
     .replace('s', secs);
@@ -38,9 +34,8 @@ class Clock {
 
   start() {
     this.render();
-    this.timer = setInterval(this.render, 1000);
+    this.timer = setInterval(() => this.render, 1000);
   };
-
 }
 
 let clock = new Clock("h:m:s");

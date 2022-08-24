@@ -9,11 +9,11 @@ class Animal {
 }
 
 class Rabbit extends Animal {
-  constructor(name, created) {
+  constructor(name) {
     super(name);
-    this.created = created;
+    this.created = Date.now();
   }
 }
 
-let rabbit = new Rabbit("White Rabbit", Date.now());
+let rabbit = new Rabbit("White Rabbit");
 alert(rabbit.name);

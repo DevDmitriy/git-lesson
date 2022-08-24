@@ -42,8 +42,3 @@ car2.accelerate(200);
 console.log(car2.status());
 car2.brake(100);
 console.log(car2.status());
-
-
-
-
-
