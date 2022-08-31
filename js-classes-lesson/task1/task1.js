@@ -2,26 +2,26 @@
 // We define 2 properties (brand, speed) and
 // 3 methods (accelerate, brake, describe)
 
-var car = {
+// var car = {
 
-	// properties
-	brand: "Ford",
-	speed: 0,
+// 	// properties
+// 	brand: "Ford",
+// 	speed: 0,
 
-	// methods:
+// 	// methods:
 
-	accelerate: function(amount) {
-		this.speed += amount;
-	},
+// 	accelerate: function(amount) {
+// 		this.speed += amount;
+// 	},
 
-	brake: function(amount) {
-		this.speed -= amount;
-	},
+// 	brake: function(amount) {
+// 		this.speed -= amount;
+// 	},
 
-	status: function() {
-		return this.brand + " running at " + this.speed + " km/h";
-	}
-};
+// 	status: function() {
+// 		return this.brand + " running at " + this.speed + " km/h";
+// 	}
+// };
 
 
 // Try methods
@@ -38,23 +38,29 @@ console.log(car.status());
 // But now if we want another car we need to repeat the code...
 // That's unnecessary repetition.
 
-var car2 = {
+// var car2 = {
 
-	brand: "Ferrari",
-	speed: 0,
+// 	brand: "Ferrari",
+// 	speed: 0,
 
-	accelerate: function(inc) {
-		this.speed += inc;
-	},
+// 	accelerate: function(inc) {
+// 		this.speed += inc;
+// 	},
 
-	brake: function(dec) {
-		this.speed -= dec;
-	},
+// 	brake: function(dec) {
+// 		this.speed -= dec;
+// 	},
 
-	status: function() {
-		return this.brand + " running at " + this.speed + " km/h";
-	}
-};
+// 	status: function() {
+// 		return this.brand + " running at " + this.speed + " km/h";
+// 	}
+// };
+
+class Car {
+	constructor(brand, speed) 
+	{this.brand = brand;
+	this.speed = speed};
+}
 
 car2.accelerate(200);
 console.log(car2.status());
